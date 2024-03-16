@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ Án</title>
+    <link rel="icon"
+        href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo"
+        type="image/gif" sizes="16x16">
+    <!-- <link rel="stylesheet" href="/box1.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("./html/header.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+    <section class="abs-section">
+        <h1 class="abs-title">About Us</h1>
+        <div class="abs-image">
+            <img src="/img/shop.webp" alt="About Us">
+        </div>
+        <p>Chào Mừng <span style="color: #F45703; font-weight: bold;">King Shop</span>, điểm đến số một cho những người
+            yêu thời trang và phong cách. Chúng tôi tự hào là một trong những điểm đến hàng đầu cho quần áo và phụ kiện
+            thời trang chất lượng, đa dạng về kiểu dáng và phong cách.</p>
+        <p>Tại <span style="color: #F45703; font-weight: bold;">King Shop</span>,chúng tôi cam kết mang đến cho khách
+            hàng những sản phẩm tốt nhất từ các thương hiệu hàng đầu trên thế giới cùng với dịch vụ chăm sóc khách hàng
+            tận tình và chuyên nghiệp. Với một đội ngũ nhân viên giàu kinh nghiệm và đam mê với thời trang, chúng tôi
+            luôn sẵn lòng hỗ trợ và tư vấn cho bạn để chọn lựa những bộ trang phục và phụ kiện phù hợp nhất với phong
+            cách cá nhân của bạn.</p>
+        <p>chúng tôi luôn lắng nghe ý kiến của khách hàng và không ngừng cải tiến để mang lại trải nghiệm mua sắm tốt
+            nhất. Chúng tôi tự hào về việc xây dựng một cộng đồng yêu thời trang, nơi mà mọi người có thể tự tin thể
+            hiện phong cách riêng của mình và tìm kiếm những sản phẩm thời trang độc đáo và phong cách.</p>
+        <p>Hãy ghé thăm cửa hàng của chúng tôi hoặc khám phá trực tuyến để tìm kiếm những bộ trang phục và phụ kiện
+            tuyệt vời nhất cho bản thân bạn. StyleX - Nơi thời trang và phong cách gặp gỡ!</p>
+    </section>
+
+    <div id="3"></div>
+    <script>
+        load("./html/footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

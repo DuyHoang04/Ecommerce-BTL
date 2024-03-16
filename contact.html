@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contact.module.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("./html/header.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <div class="contact-container">
+        <form action="#" class="contact-us">
+            <label for="customerName">NAME <em>&#x2a;</em></label>
+            <input type="text" id="customerName" name="customerName" required="">
+            <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+            <input type="email" id="customerEmail" name="customerEmail" required="">
+
+            <label for="customerPhone">PHONE</label>
+            <input type="tel" id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label>
+            <textarea rows="4" id="customerNote" name="customerNote" required=""></textarea>
+
+            <h3>Please provide all the information about your issue you can.</h3>
+
+            <label for="spamProtection">SPAM PROTECTION <em>&#x2a;</em></label>
+            <input type="text" id="spamProtection" name="spamProtection">
+
+            <button type="submit" id="customerOrder">SUBMIT</button>
+        </form>
+    </div>
+
+    <div id="3"></div>
+    <script>
+        load("./html/footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>
