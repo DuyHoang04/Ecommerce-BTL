@@ -47,9 +47,9 @@ function dynamicClothingSection(ob) {
     let h3Text = document.createTextNode(ob.name);
     h3.appendChild(h3Text);
 
-    let h4 = document.createElement("h4");
-    let h4Text = document.createTextNode(ob.brand);
-    h4.appendChild(h4Text);
+    // let h4 = document.createElement("h4");
+    // let h4Text = document.createTextNode(ob.brand);
+    // h4.appendChild(h4Text);
 
     let h2 = document.createElement("h2");
     let h2Text = document.createTextNode("$  " + ob.price);
@@ -59,7 +59,7 @@ function dynamicClothingSection(ob) {
     boxLink.appendChild(imgTag);
     boxLink.appendChild(detailsDiv);
     detailsDiv.appendChild(h3);
-    detailsDiv.appendChild(h4);
+    // detailsDiv.appendChild(h4);
     detailsDiv.appendChild(h2);
 
     return boxDiv;

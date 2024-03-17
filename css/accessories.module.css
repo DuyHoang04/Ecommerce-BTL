@@ -54,7 +54,8 @@ h1 {
 
 h3 {
     font-size: 16px;
-    height: 20px;
+    height: 30px;
+    font-weight: 500;
 }
 
 h4 {
@@ -63,7 +64,9 @@ h4 {
 }
 
 h2 {
-    color: #F45703
+    color: #F45703;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
@@ -122,7 +125,13 @@ h2 {
         padding-inline: 1rem;
     }
 
+    h3 {
+        font-size: 16px;
+        height: 40px;
+    }
+
     #containerProductAccessories {
+        grid-gap: 0 10px;
         grid-template-columns: repeat(2, 1fr);
     }
 }

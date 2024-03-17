@@ -17,8 +17,8 @@ function createProductBox(product) {
     const h3 = document.createElement("h3");
     h3.textContent = product.name;
 
-    const h4 = document.createElement("h4");
-    h4.textContent = product.brand;
+    // const h4 = document.createElement("h4");
+    // h4.textContent = product.brand;
 
     const h2 = document.createElement("h2");
     h2.textContent = "$ " + product.price;
@@ -27,7 +27,7 @@ function createProductBox(product) {
     boxLink.appendChild(imgTag);
     boxLink.appendChild(detailsDiv);
     detailsDiv.appendChild(h3);
-    detailsDiv.appendChild(h4);
+    //detailsDiv.appendChild(h4);
     detailsDiv.appendChild(h2);
 
     return boxDiv;

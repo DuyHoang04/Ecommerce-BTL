@@ -6,15 +6,25 @@ body {
     margin: 0;
 }
 
+.cartIcon {
+    position: relative;
+}
+
 #badge {
     position: absolute;
-    background-color: rgb(255, 30, 30);
-    color: white;
+    top: -8px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    padding: 5px 8px;
-    font-size: 14px;
-    top: 10px;
-    right: 128px;
+    border: 2px solid white;
+    background: #F45703;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
@@ -264,97 +274,3 @@ body {
 }
 
 /* badge media */
-
-@media(max-width: 1480px) {
-    #badge {
-        right: 146px;
-    }
-}
-
-@media(max-width: 1426px) {
-    #badge {
-        right: 142px;
-    }
-}
-
-@media(max-width: 1360px) {
-    #badge {
-        right: 136px;
-    }
-}
-
-@media(max-width: 1320px) {
-    #badge {
-        right: 129px;
-    }
-}
-
-@media(max-width: 1259px) {
-    #badge {
-        right: 119px;
-    }
-}
-
-@media(max-width: 1212px) {
-    #badge {
-        right: 96px;
-    }
-}
-
-@media(max-width: 1155px) {
-    #badge {
-        right: 87px;
-    }
-}
-
-@media(max-width: 1090px) {
-    #badge {
-        right: 119px;
-    }
-}
-
-@media(max-width: 1030px) {
-    #badge {
-        right: 109px;
-    }
-}
-
-@media(max-width: 970px) {
-    #badge {
-        right: 100px;
-    }
-}
-
-@media(max-width: 910px) {
-    #badge {
-        right: 94px;
-    }
-}
-
-@media(max-width: 850px) {
-    #badge {
-        display: none;
-    }
-}
-
-@media(max-width: 750px) {
-    #badge {
-        right: 130px;
-        padding: 3px 6px;
-        font-size: 12px;
-        top: 12px;
-    }
-}
-
-@media(max-width: 650px) {
-    #badge {
-        right: 100px;
-    }
-}
-
-@media(max-width: 550px) {
-    #badge {
-        right: 90px;
-        top: 18px;
-    }
-}

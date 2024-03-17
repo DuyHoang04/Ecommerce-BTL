@@ -74,6 +74,7 @@ function dynamicContentDetails(ob) {
     buttonDiv.id = 'button';
 
     let buttonTag = document.createElement('button');
+    buttonTag.classList.add("btn-order")
     buttonDiv.appendChild(buttonTag);
 
     buttonText = document.createTextNode('Thêm vào giỏ hàng');
@@ -86,6 +87,12 @@ function dynamicContentDetails(ob) {
         }
         document.cookie = "orderId=" + order + ",counter=" + counter;
         document.getElementById("badge").innerHTML = counter;
+        toast({
+            title: "Thành công!",
+            message: "Thêm vào giỏ hàng thành công",
+            type: "success",
+            duration: 500000000000
+        });
         console.log(document.cookie);
     };
     buttonTag.appendChild(buttonText);

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
     <title> Đồ Án</title>
     <!-- favicon -->
     <link rel="icon"
@@ -25,6 +24,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/toast.module.css">
 </head>
 
 <body>
@@ -50,6 +50,16 @@
             document.getElementById(2).innerHTML = req.responseText;
         }
     </script>
+    <div id="5"></div>
+    <script>
+        load("./html/collection.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(5).innerHTML = req.responseText;
+        }
+    </script>
 
     <!-- CONTENT SECTION -->
     <div id="3"></div>
@@ -64,12 +74,22 @@
     </script>
     <div id="6"></div>
     <script>
-        load("./html/blog.html");
+        load("./html/news.html");
         function load(url) {
             req = new XMLHttpRequest();
             req.open("GET", url, false);
             req.send(null);
             document.getElementById(6).innerHTML = req.responseText;
+        }
+    </script>
+    <div id="7"></div>
+    <script>
+        load("./html/contact.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(7).innerHTML = req.responseText;
         }
     </script>
     <!-- FOOTER -->
@@ -83,7 +103,7 @@
             document.getElementById(4).innerHTML = req.responseText;
         }
     </script>
-
+    <div id="toast"></div>
 </body>
 
 <!-- slider JS START -->
@@ -102,6 +122,8 @@
 </script>
 <!-- slider JS ENDS -->
 <script src="./js/header.js"></script>
+<script src="./js/toast.js"></script>
+<script src="./js//contact-home.js"></script>
 <!-- content JS -->
 <script src="./js/content.js"></script>
 
