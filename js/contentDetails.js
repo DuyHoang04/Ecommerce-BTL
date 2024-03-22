@@ -91,7 +91,7 @@ function dynamicContentDetails(ob) {
             title: "Thành công!",
             message: "Thêm vào giỏ hàng thành công",
             type: "success",
-            duration: 500000000000
+            duration: 2000
         });
         console.log(document.cookie);
     };

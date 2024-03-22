@@ -112,6 +112,10 @@ button:hover {
     background: rgb(255, 199, 184);
 }
 
+#text-captcha {
+    height: 120px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -122,4 +126,10 @@ textarea:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--font-color);
     -webkit-box-shadow: 0 0 0px 1000px var(--form-bg) inset;
     transition: background-color 5000s ease-in-out 0s;
+}
+
+@media(max-width: 600px) {
+    .contact-us {
+        padding-inline: 20px;
+    }
 }

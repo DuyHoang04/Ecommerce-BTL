@@ -3,6 +3,11 @@ const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
 const sendButton = document.querySelector('.click-toast');
 
+const reloadData = () => {
+    nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+}
 
 sendButton.addEventListener('click', async (event) => {
     event.preventDefault();
@@ -37,5 +42,6 @@ sendButton.addEventListener('click', async (event) => {
             type: "success",
             duration: 5000
         });
+        reloadData();
     }
 });
