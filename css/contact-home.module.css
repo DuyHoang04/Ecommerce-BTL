@@ -40,13 +40,11 @@ iframe {
     color: var(--black);
     font-size: 40px;
     letter-spacing: 1.5px;
-    margin-bottom: 10px;
     color: var(--light-black);
 }
 
 .form .form-txt span {
     color: var(--light-black);
-    font-size: 14px;
 }
 
 .form .form-txt h3 {
@@ -58,7 +56,6 @@ iframe {
 
 .form .form-txt p {
     color: var(--light-black);
-    font-size: 14px;
 }
 
 .form .form-details {

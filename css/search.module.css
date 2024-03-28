@@ -124,6 +124,18 @@ h2 {
         padding-inline: 1rem;
     }
 
+    h3 {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    h3 {
+        white-space: nowrap;
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     #containerProduct {
         grid-template-columns: repeat(2, 1fr);
     }

@@ -22,6 +22,7 @@ body {
     margin: auto;
 }
 
+
 #imageSection img {
     width: 100%;
     float: right;
@@ -45,9 +46,16 @@ h1 {
     word-spacing: 2px;
 }
 
+.title-similar {
+    font-size: 28px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-inline: 7rem;
+}
+
 h4 {
     color: #F45703 !important;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: bold;
     color: rgb(29, 29, 29);
     letter-spacing: 1px;
@@ -100,6 +108,58 @@ button:active {
     transform: scale(0.95);
 }
 
+#similarProduct {
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    padding-bottom: 40px;
+    padding-inline: 7rem;
+
+}
+
+#box {
+    width: 100%;
+    background-color: transparent;
+    align-content: center;
+    transition: all 0.2s;
+    border-radius: 5px;
+}
+
+
+#similarProduct img {
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#detailsProduct {
+    height: auto;
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+#box a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    height: 30px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: 600;
+    color: #F45703;
+    font-size: 1.1em;
+}
+
+
+
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
 @media(max-width: 1300px) {
@@ -119,6 +179,12 @@ button:active {
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    #similarProduct {
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 6rem;
     }
 }
 
@@ -146,6 +212,7 @@ button:active {
     h3 {
         font-size: 15px;
     }
+
 
 }
 
@@ -177,10 +244,44 @@ button:active {
     #button {
         text-align: center;
     }
+
+    #similarProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 2rem;
+    }
+
+    .title-similar {
+        font-size: 28px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 @media(max-width: 650px) {
     #containerD {
         width: 80%;
+    }
+
+    #similarProduct {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 1rem;
+    }
+
+    .name {
+        white-space: nowrap;
+        width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .title-similar {
+        font-size: 28px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        padding: 0;
+        text-align: center;
     }
 }

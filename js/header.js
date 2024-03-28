@@ -1,5 +1,9 @@
 const searchInput = document.getElementById('input');
+const sideSearchInput = document.getElementById('side-input');
+
 const searchLink = document.getElementById('searchLink');
+const sideSearchLink = document.getElementById('side-searchLink');
+
 const clothing = document.getElementById("clothing")
 const accessories = document.getElementById("accessories")
 const about = document.getElementById("about")
@@ -23,18 +27,25 @@ else if (currentPage === "about.html") {
     contact.style.color = "#F45703";
 }
 
-searchInput.addEventListener('keypress', function (event) {
-    if (event.key === 'Enter' && searchInput.value.trim() !== '') {
+const keypressEnterEvent = (event) => {
+    if (event.keyCode === 13 && searchInput.value.trim() !== '') {
         window.location.href = `search.html?name=${searchInput.value}`;
     }
-});
+}
 
-searchLink.addEventListener('click', function () {
-    console.log("Hello");
+const searchLinkEvent = (event) => {
     if (searchInput.value.trim() !== '') {
-        window.location.href = `searc.html?name=${searchInput.value}`;
+        window.location.href = `search.html?name=${searchInput.value}`;
     }
-});
+}
+
+searchInput.addEventListener('keypress', keypressEnterEvent);
+
+sideSearchInput.addEventListener('keypress', keypressEnterEvent);
+
+searchLink.addEventListener('click', searchLinkEvent);
+
+sideSearchLink.addEventListener('click', searchLinkEvent);
 
 menuBtn.addEventListener("click", () => {
     cartIcon.style.zIndex = "-1"

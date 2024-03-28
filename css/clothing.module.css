@@ -71,6 +71,10 @@ h2 {
     font-size: 1.1em;
 }
 
+.title {
+    text-align: center;
+}
+
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
 @media(max-width: 1070px) {
@@ -134,6 +138,13 @@ h2 {
     h3 {
         font-size: 16px;
         height: 40px;
+    }
+
+    h3 {
+        white-space: nowrap;
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     #containerProductClothing {

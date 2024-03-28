@@ -74,6 +74,10 @@ h2 {
     margin: 0 !important;
 }
 
+.title-content {
+    text-align: center;
+}
+
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
 @media(max-width: 1070px) {
@@ -111,9 +115,16 @@ h2 {
 
 
 
-@media(max-width: 505px) {
+@media(max-width: 550px) {
     #mainContainer {
         padding-inline: 1rem;
+    }
+
+    h3 {
+        white-space: nowrap;
+        width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     #containerClothing,
