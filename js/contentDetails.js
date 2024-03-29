@@ -40,7 +40,7 @@ function dynamicContentDetails(ob) {
     detailsDiv.id = 'details';
 
     let h3DetailsDiv = document.createElement('h3');
-    let h3DetailsText = document.createTextNode('$ ' + ob.price);
+    let h3DetailsText = document.createTextNode('$ ' + Intl.NumberFormat().format(ob.price));
     h3DetailsDiv.appendChild(h3DetailsText);
 
     let h3 = document.createElement('h3');
@@ -136,7 +136,7 @@ const dynamicProductSection = (ob) => {
     // h4.appendChild(h4Text);
 
     let h2 = document.createElement("h2");
-    let h2Text = document.createTextNode("$  " + ob.price);
+    let h2Text = document.createTextNode("$  " + Intl.NumberFormat().format(ob.price));
     h2.classList.add("price")
     h2.appendChild(h2Text);
 

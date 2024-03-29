@@ -21,7 +21,7 @@ function createProductBox(product) {
     // h4.textContent = product.brand;
 
     const h2 = document.createElement("h2");
-    h2.textContent = "$ " + product.price;
+    h2.textContent = "$ " + Intl.NumberFormat().format(product.price);
 
     boxDiv.appendChild(boxLink);
     boxLink.appendChild(imgTag);

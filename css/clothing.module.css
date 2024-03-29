@@ -45,6 +45,7 @@ h1 {
     height: auto;
     padding: 0 15px;
     text-transform: capitalize;
+
 }
 
 #box a {
@@ -54,7 +55,7 @@ h1 {
 
 h3 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     height: 30px;
 }
 
@@ -66,13 +67,9 @@ h4 {
 
 h2 {
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 600;
     color: #F45703;
     font-size: 1.1em;
-}
-
-.title {
-    text-align: center;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
